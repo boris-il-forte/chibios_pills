@@ -11,8 +11,8 @@ static SerialConfig sd1Config = {SERIAL_OUT_BITRATE, 0, USART_CR2_STOP1_BITS
                                      | USART_CR2_LINEN,
                                  0};
 
-static PWMConfig pwmcfg = {10000000, /* 100Mhz PWM clock frequency */
-                           1000, /* PWM period 0.01 second */
+static PWMConfig pwmcfg = {10000000, /* 10Mhz PWM clock frequency */
+                           10000, /* PWM period 0.001 second */
                            NULL, /* No callback */
                            /* Only channel 4 enabled */
                            {
